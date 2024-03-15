@@ -1,17 +1,14 @@
-const text = document.querySelector(".profile__next");
-const right = document.querySelector(".profile__mark");
-text.addEventListener("mouseover", function () {
-  right.classList.add("profile__delay");
-});
-text.addEventListener("mouseout", function () {
-  right.classList.remove("profile__delay");
-});
+// コピーボタン要素を取得
+const Gmail = document.querySelector("#gmail");
 
-const text2 = document.querySelector(".card__next");
-const right2 = document.querySelector(".card__mark");
-text2.addEventListener("mouseover", function () {
-  right2.classList.add("card__delay");
-});
-text2.addEventListener("mouseout", function () {
-  right2.classList.remove("card__delay");
+// コピーボタンクリック時の処理
+Gmail.addEventListener("click", async () => {
+  // コピー対象テキストを取得
+  const text = Gmail.textContent;
+
+  // Clipboard API を使用してテキストをコピー
+  await navigator.clipboard.writeText(text);
+
+  // コピー完了メッセージを表示
+  alert("Gmailをコピーしました。");
 });

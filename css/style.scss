@@ -58,12 +58,12 @@ h3 {
     letter-spacing: 0.15em;
   }
   &__profile::after {
-    content: "More";
+    content: "My Profile";
     color: #000;
     font-size: 40px;
     position: absolute;
     top: 40px;
-    left: 250px;
+    left: 190px;
   }
   &__title {
     color: #d9d9d9;
@@ -316,8 +316,8 @@ h3 {
     color: #000;
     font-size: 40px;
     position: absolute;
-    top: 45px;
-    left: 120px;
+    top: 35px;
+    left: 150px;
   }
   &__content {
     display: inline-block;
@@ -335,6 +335,15 @@ h3 {
     letter-spacing: 0.2em;
     font-weight: bold;
     font-size: 22px;
+  }
+  &__textflex {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__icon {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 16px;
   }
 }
 .skill {
@@ -384,6 +393,7 @@ h3 {
     margin: 15px 0;
   }
 }
+
 .page {
   margin: 100px 0 60px;
 
@@ -445,10 +455,11 @@ h3 {
     width: 100vw;
     padding: 30px 0;
     background-color: #555;
-  }
-  &__text {
-    font-size: 14px;
-    color: #fff;
-    text-align: center;
+
+    &__text {
+      font-size: 14px;
+      color: #fff;
+      text-align: center;
+    }
   }
 }
