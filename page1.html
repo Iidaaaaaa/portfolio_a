@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+
+    <main class="main">
+      <a href="index.html">
+        <img class="main__home" src="./image/home.svg" alt="home"
+      /></a>
+
+      <div class="main__inner">
+        <article class="page">
+          <div class="page__iamgemask">
+            <img class="page__image" src="./image/work2.png" alt="workimage" />
+          </div>
+        </article>
+        <div class="pagework">
+          <div class="pagework__left">
+            <p class="pagework__name">作品名：Whiteboard</p>
+            <p class="pagework__subtitle">Webアプリ制作</p>
+            <div class="pagework__textall">
+              <p class="pagework__text">制作期間：3ヶ月</p>
+              <p class="pagework__text">
+                使用したもの：visual Studio Code/figma/<br />HTML/CSS/JavaScript/firebase/interact.js
+              </p>
+              <div class="pagework__next_article">
+                <a class="pagework__next_tag" href="https://whiteboard-c3c66.web.app">
+                  <p class="card__next">作品へ飛ぶ</p></a
+                >
+              </div>
+            </article>
+            </div>
+          </div>
+          <div class="pagework__right">
+            <p class="pagework__text">
+この作品は、１年生の最後の制作で、進級制作展に展示したものです。<br>
+付箋アプリとチャットアプリを組み合わせたもので、firebaseを使って、すべて保存しているため、更新しても内容は残ったままになっています。<br>
+この作品を作るときはコーディングはほぼ自力でやっており、ChatGPTは使っていません。<br>
+１年で学んだ技術を生かした作品です。
+<br>※作品を見るときはGoogle認証が必要です。
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__bg">
+        <p class="footer__text">© 2024 Iida Tomonari</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </body>
+</html>
